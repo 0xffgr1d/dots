@@ -1,0 +1,5 @@
+window = { title = "HACKERS SHELL", blur = true, opacity = 0.8 }
+font = { normal = { family = "FixedsysMono Nerd Font Mono" } }
+colors = { primary.foreground = "#ffffff", primary.background = "#000000" }
+cursor = { style = { shape = "Block", blinking = "Always" }, blink_timeout = 255, blink_interval = 250 }
+mouse = { hide_when_typing = true }
