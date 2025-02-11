@@ -1,0 +1,3 @@
+# neovim configuration
+
+- Pckr
