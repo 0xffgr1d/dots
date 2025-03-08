@@ -5,6 +5,12 @@
 -- Basic settings
 vim.opt.wrap = false
 
+-- Macros
+vim.keymap.set({ "n", "v" }, "<leader>0", ":Gen<CR>")
+vim.keymap.set({ "n", "v" }, "<leader>3", "q")
+vim.keymap.set({ "n", "v" }, "<leader>4", ":foldclose<CR>")
+vim.keymap.set({ "n", "v" }, "<leader>5", ":foldopen<CR>")
+
 function MakeTerminal()
   vim.cmd("split")
   vim.cmd("wincmd j")
@@ -17,4 +23,4 @@ end
 vim.api.nvim_set_keymap("n", "<leader>2", ":lua MakeTerminal()<CR>", { noremap = true, silent = true })
 
 -- Doxygen settings
--- vim.g.DoxygenToolkit_commentType = "C"
+vim.g.DoxygenToolkit_commentType = "C"
